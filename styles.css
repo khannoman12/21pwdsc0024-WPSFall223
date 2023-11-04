@@ -1,0 +1,91 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a box-sizing border-box model for easier layout */
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    text-size-adjust: 100px;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Style the main container */
+.olms-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Style the book list section */
+.book-list {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the add new book section */
+.add-new-book {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the search books section */
+.search-books {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Style form inputs and buttons */
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style search results list */
+#search-results {
+    list-style: none;
+    padding: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .olms-container {
+        flex-direction: column;
+    }
+
+    .add-new-book,
+    .search-books {
+        margin-top: 20px;
+    }
+}
